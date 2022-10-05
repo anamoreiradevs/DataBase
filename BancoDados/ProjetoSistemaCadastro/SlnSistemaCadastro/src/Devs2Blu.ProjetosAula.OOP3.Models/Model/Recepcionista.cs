@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
 {
-    public class Recepcionista : Pessoa
+    public class Recepcionista 
     {
-        public Int32 CodigoRecepcionista { get; set; }
+        public Int32 Id { get; set; }
         public String Setor { get; set; }
 
         public Recepcionista()
         {
-            TipoPessoa = TipoPessoa.PF;
+           
         }
 
-        public Recepcionista(Int32 codigo, String nome, String cpf, string setor)
+        /*public Recepcionista(Int32 codigo, String nome, String cpf, string setor)
         {
             Codigo = codigo;
             Nome = nome;
@@ -27,6 +27,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
 
             Random rd = new Random();
             CodigoRecepcionista = Int32.Parse($"{codigo}{rd.Next(1000, 1100)}");
-        }
+        }*/
     }
 }
